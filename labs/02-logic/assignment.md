@@ -6,15 +6,15 @@
 
    Greater than:
 
-   ![greater.jpeg](images/greater.jpeg)
+   ![greater.png](images/greater.png)
 
    Less than:
 
-   ![less.jpeg](images/less.jpeg)
+   ![less.png](images/less.png)
 
 2. Equations of simplified SoP (Sum of the Products) form of the "greater than" function and simplified PoS (Product of the Sums) form of the "less than" function.
 
-   ![functions.jpeg](images/functions.jpeg)
+   ![functions.png](images/functions.png)
 
 ### 4-bit comparator
 
