@@ -6,15 +6,15 @@
 
    Greater than:
 
-   ![greater.jpg](greater.jpg)
+   ![greater.jpg](images/greater.jpg)
 
    Less than:
 
-   ![less.jpg](less.jpg)
+   ![less.jpg](images/less.jpg)
 
 2. Equations of simplified SoP (Sum of the Products) form of the "greater than" function and simplified PoS (Product of the Sums) form of the "less than" function.
 
-   ![functions.jpg](functions.jpg)
+   ![functions.jpg](images/functions.jpg)
 
 ### 4-bit comparator
 
@@ -40,7 +40,7 @@
 
 2. Text console screenshot during your simulation, including reports.
 
-   ![screen.png](screen.png)
+   ![screen.png](images/screen.png)
 
 3. Link to your public EDA Playground example:
 
