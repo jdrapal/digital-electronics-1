@@ -51,7 +51,7 @@ begin
 
             -- WRITE YOUR CODE HERE
             when "0010" =>
-                seg_o <= "1010010"; -- 2
+                seg_o <= "0010010"; -- 2
 
             when "0011" =>
                 seg_o <= "0000110"; -- 3
