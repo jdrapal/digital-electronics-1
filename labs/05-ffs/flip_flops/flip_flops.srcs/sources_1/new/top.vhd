@@ -81,8 +81,8 @@ begin
         q_bar => open
      
      );
-LED(3) <= s_q_0,
-LED(2) <= s_q_1,
-LED(1) <= s_q_2,
+LED(3) <= s_q_0;
+LED(2) <= s_q_1;
+LED(1) <= s_q_2;
 LED(0) <= s_q_3;
 end Behavioral;
