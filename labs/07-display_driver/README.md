@@ -40,7 +40,7 @@ Due to the physiological properties of human vision, it is necessary that the ti
 
 1. See [schematic](https://github.com/tomas-fryza/Digital-electronics-1/blob/master/Docs/nexys-a7-sch.pdf) or [reference manual](https://reference.digilentinc.com/reference/programmable-logic/nexys-a7/reference-manual) of the Nexys board, find out the connection of 7-segment displays, and complete the signal timing to display four-digit value `3.142`.
 
-![Timing of seven-segment display](images/wavedrom_7-segment.png)
+![Timing of seven-segment display](images/prep.png)
 
 > The figure above was created in [WaveDrom](https://wavedrom.com/) digital timing diagram online tool. The figure source code is as follows:
 >
