@@ -1,10 +1,10 @@
-# Lab 8: YOUR_FIRSTNAME LASTNAME
+# Lab 8: Jakub Drápal
 
 ### Traffic light controller
 
 1. Figure of traffic light controller state diagram. The image can be drawn on a computer or by hand. Always name all states, transitions, and input signals!
 
-   ![your figure]()
+   ![your figure](images/ukol.JPG)
 
 2. Listing of VHDL code of the completed process `p_traffic_fsm`. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
@@ -43,8 +43,48 @@
 
                     when WEST_GO =>
                         -- WRITE OTHER STATES HERE
-
-
+                        if (s_cnt < c_DELAY_4SEC) then 
+                            s_cnt <= s_cnt +1; 
+                        else
+                            s_state <= WEST_WAIT;
+                            s_cnt   <= c_ZERO;     
+                        end if;
+                        
+                    when WEST_WAIT =>
+                        -- WRITE OTHER STATES HERE
+                        if (s_cnt < c_DELAY_2SEC) then 
+                            s_cnt <= s_cnt +1; 
+                        else
+                            s_state <= STOP2;
+                            s_cnt   <= c_ZERO;     
+                        end if;    
+                        
+                    when STOP2 =>
+                        -- WRITE OTHER STATES HERE
+                        if (s_cnt < c_DELAY_1SEC) then 
+                            s_cnt <= s_cnt +1; 
+                        else
+                            s_state <= SOUTH_GO;
+                            s_cnt   <= c_ZERO;     
+                        end if;    
+                        
+                    when SOUTH_GO =>
+                        -- WRITE OTHER STATES HERE
+                        if (s_cnt < c_DELAY_4SEC) then 
+                            s_cnt <= s_cnt +1; 
+                        else
+                            s_state <= SOUTH_WAIT;
+                            s_cnt   <= c_ZERO;     
+                        end if;        
+                    
+                    when SOUTH_WAIT =>
+                        -- WRITE OTHER STATES HERE
+                        if (s_cnt < c_DELAY_2SEC) then 
+                            s_cnt <= s_cnt +1; 
+                        else
+                            s_state <= STOP1;
+                            s_cnt   <= c_ZERO;     
+                        end if;         
                     -- It is a good programming practice to use the 
                     -- OTHERS clause, even if all CASE choices have 
                     -- been made.
@@ -59,4 +99,4 @@
 
 3. Screenshot with simulated time waveforms. The full functionality of the entity must be verified. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+   ![your figure](images/waves.png)
