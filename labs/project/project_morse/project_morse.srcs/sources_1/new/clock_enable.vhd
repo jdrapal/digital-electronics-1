@@ -1,14 +1,3 @@
-------------------------------------------------------------
---
--- Generates clock enable signal.
--- Nexys A7-50T, Vivado v2020.1.1, EDA Playground
---
--- Copyright (c) 2019-Present Tomas Fryza
--- Dept. of Radio Electronics, Brno Univ. of Technology, Czechia
--- This work is licensed under the terms of the MIT license.
---
-------------------------------------------------------------
-
 library ieee;               -- Standard library
 use ieee.std_logic_1164.all;-- Package for data types and logic operations
 use ieee.numeric_std.all;   -- Package for arithmetic operations
@@ -18,15 +7,16 @@ use ieee.numeric_std.all;   -- Package for arithmetic operations
 ------------------------------------------------------------
 entity clock_enable is
     generic(
-        g_MAX : natural := 2  -- Number of clk pulses to
-                               -- generate one enable signal
-                               -- period
+        g_MAX : natural := 10 -- Number of clk pulses to
+          -- generate one enable signal
+                             -- period
     );  -- Note that there IS a semicolon between generic 
         -- and port sections
     port(
         clk   : in  std_logic; -- Main clock
         reset : in  std_logic; -- Synchronous reset
-        ce_o  : out std_logic  -- Clock enable pulse signal
+        ce_o  : out std_logic-- Clock enable pulse signal
+       
     );
 end entity clock_enable;
 
@@ -36,8 +26,7 @@ end entity clock_enable;
 architecture Behavioral of clock_enable is
 
     -- Local counter
-    signal s_cnt_local : natural;
-
+    signal s_cnt_local  : natural;
 begin
     --------------------------------------------------------
     -- p_clk_ena:
@@ -63,5 +52,5 @@ begin
             end if;
         end if;
     end process p_clk_ena;
-
+     
 end architecture Behavioral;
